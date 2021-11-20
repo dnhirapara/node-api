@@ -1,0 +1,9 @@
+{
+  hmac: '1e50c04bf081ddc28cafa64b9addbcb11aab7b4089ab40a76596e2470592f203',
+  host: 'ZS1tYWlsLWNyZWF0b3JzLm15c2hvcGlmeS5jb20vYWRtaW4',
+  locale: 'en-IN',
+  new_design_language: 'true',
+  session: 'f3abcd6e924c8c85d5f74eb340b106a770b64cccfc120caade58590758ed0f90',
+  shop: 'e-mail-creators.myshopify.com',
+  timestamp: '1622887941'
+}
