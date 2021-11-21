@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "09e06068-8ea6-423e-ad30-f820f702a047",
+		"name": "General",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:3000/api/broadcast/create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let startTIme = new Date(\"2022-11-20T00:24:00\").toISOString();",
+							"let endTime = new Date(\"2022-11-22T00:24:00\").toISOString();",
+							"console.log(startTIme);",
+							"console.log(endTime);",
+							"pm.globals.set(\"startTIme\", startTIme);",
+							"pm.globals.set(\"endTime\", endTime);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Hello Peter",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Hi Peter",
+							"type": "text"
+						},
+						{
+							"key": "scheduledStartTime",
+							"value": "{{startTIme}}",
+							"type": "text"
+						},
+						{
+							"key": "scheduledEndTime",
+							"value": "{{endTime}}",
+							"type": "text"
+						},
+						{
+							"key": "boundStreamId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "privacyStatus",
+							"value": "public",
+							"type": "text"
+						},
+						{
+							"key": "selfDeclaredMadeForKids",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "enableAutoStart",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "enableAutoStop",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "enableEmbed",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "recordFromStart",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/home/dnhirapara/Pictures/Screenshot from 2021-10-04 23-52-51.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/broadcast/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"broadcast",
+						"create"
+					]
+				},
+				"description": "Youtube Streaming Create Broadcast"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/api/v2/broadcast/create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let startTIme = new Date(\"2022-11-20T00:24:00\").toISOString();",
+							"let endTime = new Date(\"2022-11-22T00:24:00\").toISOString();",
+							"console.log(startTIme);",
+							"console.log(endTime);",
+							"pm.globals.set(\"startTIme\", startTIme);",
+							"pm.globals.set(\"endTime\", endTime);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Hello Peter 2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Hi Peter 2",
+							"type": "text"
+						},
+						{
+							"key": "scheduledStartTime",
+							"value": "{{startTIme}}",
+							"type": "text"
+						},
+						{
+							"key": "scheduledEndTime",
+							"value": "{{endTime}}",
+							"type": "text"
+						},
+						{
+							"key": "boundStreamId",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "privacyStatus",
+							"value": "public",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "selfDeclaredMadeForKids",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "enableAutoStart",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "enableAutoStop",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "enableEmbed",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "recordFromStart",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/home/dnhirapara/Pictures/Screenshot from 2021-10-04 23-52-51.png"
+						},
+						{
+							"key": "refresh_token",
+							"value": "1//0gJtNcjTBwYUiCgYIARAAGBASNwF-L9Ir_rohcqQYS-qdkxEYcmsgVgL4E5Kdg8FzjeolCuRsDKMUvXdIubYdTWLk3d4wrNr5HFk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v2/broadcast/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"broadcast",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://oauth2.googleapis.com/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "1005456259761-728alo6jket94vi3kkngg5uc1sdb259a.apps.googleusercontent.com",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "DyvdcuWKCCSijIvsJNZX6E75",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "1//0gJtNcjTBwYUiCgYIARAAGBASNwF-L9Ir_rohcqQYS-qdkxEYcmsgVgL4E5Kdg8FzjeolCuRsDKMUvXdIubYdTWLk3d4wrNr5HFk",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://oauth2.googleapis.com/token",
+					"protocol": "https",
+					"host": [
+						"oauth2",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://youtube.googleapis.com/youtube/v3/liveBroadcasts?part=snippet,contentDetails,status&key={{ACCESS_TOKEN}}",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"snippet\": {\n    \"scheduledStartTime\": \"2021-12-21T18:30:00.000Z\",\n    \"title\": \"Hello World!!!\"\n  },\n  \"status\": {\n    \"privacyStatus\": \"unlisted\"\n  },\n  \"contentDetails\": {}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://youtube.googleapis.com/youtube/v3/liveBroadcasts?part=snippet,contentDetails,status&key=AIzaSyAwfhydAxKTVgw52WQHkBoSyG-Sx7YxCTw",
+					"protocol": "https",
+					"host": [
+						"youtube",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"liveBroadcasts"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet,contentDetails,status"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyAwfhydAxKTVgw52WQHkBoSyG-Sx7YxCTw"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
